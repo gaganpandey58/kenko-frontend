@@ -1,0 +1,36 @@
+.accounticon svg{
+   font-size: 2.1rem;
+   fill: #6e6969;
+   margin-top: 13px;
+   margin-right: 12px;
+
+}
+
+.accountlogin{
+   display:flex;
+   align-items:flex-end;
+justify-content: space-between;
+   flex-direction:row;
+   column-gap: 10px;
+   
+}
+
+.MuiButton-root {
+   font-size: 1rem;
+  
+ }
+ .button{
+   color:azure;
+ }
+
+
+.login-btn{
+   
+   background-color:turquoise;
+   color:white;
+   font-family: Microsoft Sans Serif;
+   font-size: small;
+   border-radius: 6px;
+   box-shadow: 0 0 5px rgb(7, 125, 146);
+   
+}
