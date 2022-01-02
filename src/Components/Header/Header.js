@@ -1,19 +1,18 @@
 import React from 'react';
 
-import './Navbar.css';
-import SearchBar from '../SearchBar/Searchbar';
+import './Header.css';
 import AccountLogin from '../AccountLogin/AccountLogin';
-function Navbar() {
+function Header() {
     return ( 
         <div className="bar">
             <div className="logo">
                 <text className="logo-text">kenko</text>
             </div>
-         
-            <SearchBar placeholder="Search" />
-            <div><AccountLogin/></div>
+         <div className="diseaselabel">Disease Prediction System</div>
+            
+            <div className='AccountLogin'><AccountLogin/></div>
         </div>
      );
 }
 
-export default Navbar;
+export default Header;

@@ -8,29 +8,29 @@
 
 .accountlogin{
    display:flex;
-   align-items:flex-end;
-justify-content: space-between;
+   align-items:center;
+   justify-content: space-between;
    flex-direction:row;
    column-gap: 10px;
    
 }
 
-.MuiButton-root {
-   font-size: 1rem;
-  
- }
- .button{
-   color:azure;
- }
 
-
-.login-btn{
+.register-btn{
    
    background-color:turquoise;
    color:white;
    font-family: Microsoft Sans Serif;
    font-size: small;
-   border-radius: 6px;
+   margin-top:5%;
+   border-radius: 1px;
    box-shadow: 0 0 5px rgb(7, 125, 146);
    
+}
+
+.login-btn{
+   background-color:white;
+   box-shadow: 1px 1px 2px rgb(1, 68, 80);
+   border-radius: 2px;
+   margin-top:5%;
 }

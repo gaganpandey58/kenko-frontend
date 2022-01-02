@@ -8,11 +8,13 @@ function AccountLogin() {
       
        <div className="accountlogin">  
      <div className='login-btn' >
-         <Button size="medium" className='button' href="#outlined-buttons">
-        Login/Register
+         <Button size="small" className='button' href="#outlined-buttons">
+        Log in
       </Button>
-      </div>  
-
+     </div>  
+<div className="register-btn"> <Button size="small" className='button' href="#outlined-buttons">
+        Get Started
+      </Button></div>
       <div className="accounticon">
       <AccountCircleIcon /> 
       </div>
