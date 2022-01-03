@@ -16,7 +16,7 @@ function Header() {
             </div>
 
             <div className='banner'>
-                <Banner />
+                {/* <Banner /> */}
             </div>
         </div>
      );

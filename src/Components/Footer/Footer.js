@@ -32,7 +32,7 @@ function Footer() {
 
              <div className='subscription'>
                  <h5>Subscribe For More Information</h5>
-                 <input type="Email" placeholder='Enter Your Email'/>
+                 <input className='email-field' type="Email" placeholder='Enter Your Email'/>
                  </div>
         </div>
     );
