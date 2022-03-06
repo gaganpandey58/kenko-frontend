@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+
 import reportWebVitals from './reportWebVitals';
+
+import ReportPdf from './Components/PdfReport/ReportPdf';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ReportPdf/>
   </React.StrictMode>,
   document.getElementById('root')
 );
