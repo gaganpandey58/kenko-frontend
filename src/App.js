@@ -6,16 +6,20 @@ import Banner from './Components/Banner/Banner';
 import Services from './Menu-service/Services';
 import Testimonial from './Components/Testimonials/Testimonial';
 import SignIn from './Components/AccountLogin/SignIn';
+import FirstPage from './Components/Syptom Checker/FirstPage/FirstPage';
+import SecondPage from './Components/Syptom Checker/SecondPage/SecondPage';
 
 function App() {
   return (
     <div>
-      <Header />
+      {/* <Header />
       <Banner />
       <Services />
       <Testimonial />
-      <Footer/>
+      <Footer/> */}
       {/* <SignIn /> */}
+      {/* <FirstPage/> */}
+      <SecondPage />
     </div>
   );
 }

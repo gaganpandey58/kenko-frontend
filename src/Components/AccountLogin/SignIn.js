@@ -12,17 +12,17 @@ function SignIn(){
     
     return(
         <section>
-            <div className="container">
+            <div className="signin-container">
                     <div className="box">
                         <div className="left-column">
                             <div className="left-wrapper">
-                                <img src={kenko} />
+                                <img src={kenko} className='img-logo' />
                                 {/* <h6>Disease Prediction System</h6> */}
                             </div>
                         </div>
                         <div className="right-column">
                                 <div className="right-wrapper">
-                                    <img src={kenko} />
+                                    <img className='img-logo' src={kenko} />
                                 </div>
                             <div className="form-header">
                                 <h2 className="heading">Sign in to Kenko</h2>
@@ -32,6 +32,7 @@ function SignIn(){
                                 <form onSubmit={handleSubmit} className='input-field'>
                                     <Input 
                                         autoFocus
+                                        className="signin-input"
                                         label="Username or Email Address"
                                         id="username"
                                         name="username"
@@ -39,8 +40,9 @@ function SignIn(){
                                         value={values.username}
                                         onChange={handleChange}
                                     />
-                                    {errors.username && <p>{errors.username}</p>}
+                                    {errors.username && <p className='signin-p'>{errors.username}</p>}
                                     <Input 
+                                        className="signin-input"
                                         label="Password"
                                         id="password"
                                         name="password"
@@ -48,7 +50,7 @@ function SignIn(){
                                         value={values.password}
                                         onChange={handleChange}
                                     />
-                                    {errors.password && <p>{errors.password}</p>}
+                                    {errors.password && <p className='signin-p'>{errors.password}</p>}
                                     <button className="signin-button">Sign In</button>
                                 </form>
                             </div>
