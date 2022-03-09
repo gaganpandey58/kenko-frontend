@@ -9,7 +9,7 @@ import ReportPdf from './Components/PdfReport/ReportPdf';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ReportPdf/>
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );

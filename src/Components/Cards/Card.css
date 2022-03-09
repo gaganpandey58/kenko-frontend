@@ -44,3 +44,22 @@
 .square-btn {
   margin-top: 25px;
 }
+
+
+
+.square-text{
+  font-size: 14px;
+}
+
+
+@media only screen and (min-width: 992px){
+.square {
+    width: 80%;
+    height: 70%;
+}
+.square-text{
+  font-size: 14px;
+}
+
+
+}

@@ -12,7 +12,7 @@ section {
   background-color: #f2f8fd;
 }
 
-.container {
+.signin-container {
   width: 60%;
   height: 75%;
   background-color: transparent;
@@ -56,7 +56,7 @@ section {
   position: relative;
 }
 
-img {
+img.img-logo {
   width: 85%;
 }
 
@@ -118,7 +118,7 @@ img {
   margin: 1rem;
 }
 
-label {
+label.lbl {
   font-size: 16px;
   margin-bottom: 5px;
   display: inline-block;
@@ -127,7 +127,7 @@ label {
   margin-left: 10px;
 }
 
-input {
+input.signin-input {
   width: 100%;
   padding: 12px 25px;
   outline: none;
@@ -138,7 +138,7 @@ input {
   border: 0.25px solid black;
 }
 
-p {
+p.signin-p {
   font-size: 0.8rem;
   letter-spacing: 0.7px;
   color: tomato;
@@ -146,12 +146,12 @@ p {
   font-weight: bold;
 }
 
-input:focus {
+input.signin-input:focus {
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
   border: 1px solid rgba(81, 203, 238, 1);
 }
 
-button {
+button.signin-button {
   transition: 0.4s;
 }
 
@@ -172,7 +172,7 @@ button {
   letter-spacing: 1px;
   cursor: pointer;
 }
-button:hover {
+button.signin-button:hover {
   background-color: white;
   color: tomato;
   border: 0.5px solid tomato;
@@ -197,13 +197,13 @@ button:hover {
   .heading {
     font-size: 30px;
   }
-  label {
+  label.lbl {
     font-size: 12px;
   }
-  input {
+  input.signin-input {
     width: 100%;
   }
-  img {
+  img.img-logo {
     width: 100%;
   }
   .right-wrapper {

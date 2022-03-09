@@ -11,7 +11,7 @@ function Footer() {
                       you have been encountering on your body.  </p>
                </div>
 
-               <div>
+               <div className='contactus'>
                    <h5>Contact Us</h5>
                    <ul>
                        <li id='phcontact'>
@@ -32,7 +32,7 @@ function Footer() {
 
              <div className='subscription'>
                  <h5>Subscribe For More Information</h5>
-                 <input className='email-field' type="Email" placeholder='Enter Your Email'/>
+                 <input className='email-field' type="Email"  placeholder='Enter Your Email'/>
                  </div>
         </div>
     );
