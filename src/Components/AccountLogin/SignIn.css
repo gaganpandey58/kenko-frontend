@@ -30,7 +30,7 @@ section {
 }
 
 .left-column {
-  width: 40%;
+  width: 50%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -99,7 +99,6 @@ img.img-logo {
   color: #0351c1;
   margin-bottom: 20px;
   letter-spacing: 1px;
-  display: inline-block;
   text-align: center;
 }
 
@@ -119,7 +118,7 @@ img.img-logo {
 }
 
 label.lbl {
-  font-size: 16px;
+  font-size: 9px;
   margin-bottom: 5px;
   display: inline-block;
   font-weight: 300;

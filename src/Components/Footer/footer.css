@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: row;
 
-  height: 250px;
+  height: 285px;
   background-color: #06f9f929;
-  /* margin-top: 25%; */
+   margin-top: 5%; 
 }
 
 .footer-nav {

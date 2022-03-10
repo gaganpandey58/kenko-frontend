@@ -54,11 +54,6 @@ function SignIn(){
                                     <button className="signin-button">Sign In</button>
                                 </form>
                             </div>
-                                {/*  ) : (
-                                     <div className="form-box">
-                                         <SignInPhone />
-                                     </div>
-                                 )}   */}
                         </div>
                     </div>
                 </div>

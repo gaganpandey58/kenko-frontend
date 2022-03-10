@@ -11,17 +11,14 @@ function SignUp(){
     const {handleChange, handleSubmit, values, errors} = useForm(validate);
     
     return(
-        <section>
+        <div>
             
-                                
             <h2 className="heading">Sign Up to Kenko</h2>             
-            <div className="container">
-            
-                    <div className="box">
+            <div className="signupcontainer">
+               <div className="box">
                         <div className="left-column">
                             <div className="left-wrapper">
                                 <img src={kenko} />
-                                {/* <h6>Disease Prediction System</h6> */}
                             </div>
                         </div>
                         <div className="right-column">
@@ -49,7 +46,8 @@ function SignUp(){
                                         type="text"
                                         value={values.LastName}
                                         onChange={handleChange}
-                                    /></div>  
+                                    />
+                                    </div>  
 
                                  <div className='epsec'> 
                                  <Input 
@@ -61,7 +59,10 @@ function SignUp(){
                                         onChange={handleChange}
                                     />
                                     {errors.username && <p>{errors.username}</p>}
-                                    <Input 
+                                  </div>  
+
+                                <div className='pcsec'>
+                                <Input 
                                         label="Password"
                                         id="password"
                                         name="password"
@@ -69,17 +70,7 @@ function SignUp(){
                                         value={values.password}
                                         onChange={handleChange}
                                     />
-                                    {errors.password && <p>{errors.password}</p>}</div>  
-
-                                <div className='pcsec'>
-                                <Input 
-                                    label="PhoneNo"
-                                        id="PhoneNo"
-                                        name="PhoneNo"
-                                        type="text"
-                                        value={values.PhoneNo}
-                                        onChange={handleChange}
-                                    />
+                                    {errors.password && <p>{errors.password}</p>}
                                      <Input 
                                         label="ConfirmPassword"
                                         id="CPassword"
@@ -89,29 +80,17 @@ function SignUp(){
                                         onChange={handleChange}
                                     />
                                     </div>    
-                                     <Input 
-                                    label="Gender"
-                                        id="Gender"
-                                        name="Gender"
-                                        type="text"
-                                        value={values.Gender}
-                                        onChange={handleChange}
-                                    />
-                                    
+                                   
 
 
-                                    <button className="signup-button">Sign Up</button>
+                                    <button className="signin-button">Sign Up</button>
                                 </form>
                             </div>
-                                {/*  ) : (
-                                     <div className="form-box">
-                                         <SignInPhone />
-                                     </div>
-                                 )}   */}
+                              
                         </div>
                     </div>
                 </div>
-        </section>
+        </div>
     )
 }
 
