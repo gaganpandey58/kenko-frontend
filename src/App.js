@@ -18,8 +18,8 @@ function App() {
       <Testimonial />
       <Footer/> */}
       {/* <SignIn /> */}
-      {/* <FirstPage/> */}
-      <SecondPage />
+      <FirstPage/>
+      {/* <SecondPage /> */}
     </div>
   );
 }
