@@ -32,7 +32,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 h1.enter-h1 {
@@ -92,4 +92,9 @@ button.add-button:hover {
   background-color: white;
   color: #042a4b;
   border: 0.5px solid #042a4b;
+}
+
+.showsymp {
+  width: 50%;
+  /* border: solid 2px black; */
 }

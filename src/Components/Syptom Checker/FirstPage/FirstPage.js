@@ -28,7 +28,7 @@ function FirstPage() {
                                     <label>Age</label>
                                 </div>
                                 <div>
-                                    <input type="number" autocomplete="off" className='age-in' />
+                                    <input type="number" className='age-in' />
                                 </div>
                             </div>
                             <div className='gender-div'>
@@ -36,10 +36,10 @@ function FirstPage() {
                                     <label>Gender</label>
                                 </div>
                                 <div className='gender-in'>
-                                    <input type="radio" name="gender" id="male" value={Male} />
+                                    <input type="radio" name="gender" id="male"  />
                                     <label for="male" className='gender'>Male</label>
                                     <input type="radio" name="gender" id="female" />
-                                    <label for="female" className='gender' value={Female}>Female</label>
+                                    <label for="female" className='gender' >Female</label>
                                 </div>
                             </div>
                         </div>  

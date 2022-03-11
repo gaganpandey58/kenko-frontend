@@ -2,23 +2,21 @@ import React, { useState } from 'react';
 import Input from '../../AccountLogin/Input';
 
 import './SecondPage.css';
+import ShowSymp from './ShowSymp';
 
 function SecondPage(){
-    const [values, setValues] = useState({
-        symp: ''
-    });
+    const [symptom, setSymptom] = useState('');
+    const [data, setData] = useState([]);
 
     const handleChange = e => {
-        const { name, value } = e.target;
-        setValues({
-            ...values,
-            [name]: value
-        });
+        setSymptom(e.target.value);
     };
 
     const handleSubmit = e => {
         e.preventDefault();
-        console.log(values.symp);
+        setData([...data, {item: symptom, key: Date.now()}]);
+        console.log("task=", data);
+        setSymptom('');
     }
     return(
         <div className='entersym-container'>
@@ -36,12 +34,18 @@ function SecondPage(){
                                name="symp"
                                placeholder="e.g. headache, fever"
                                onChange={handleChange}
-                               value={values.sym}
+                               value={symptom}
                             />
                             <button type="submit" className='add-button'>Add</button>
                         </form>
                     </div>
                 </div>
+                <div className='showsymp'>
+                    <div>
+                        <ShowSymp data={data} setData = {setData} />
+                    </div>
+                </div>
+                <button className='add-button'>Continue</button>
             </div>
         </div>
     )
