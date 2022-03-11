@@ -20,9 +20,7 @@ function AccountLogin() {
       </div>
   
         </div>
-       
-           
-        );
+       );
 }
 
 export default AccountLogin;

@@ -26,3 +26,10 @@
   transition: 0.5s ease-out;
   transform: translateY(-3px);
 }
+
+@media only screen and (min-width: 992px){
+  .btn {
+    width: 85%;
+   font-size: 14px
+  }
+}

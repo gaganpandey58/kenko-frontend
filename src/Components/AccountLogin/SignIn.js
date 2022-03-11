@@ -4,7 +4,7 @@ import './SignIn.css';
 import Input from './Input';
 import useForm from './useForm';
 import validate from './validateInfo';
-import kenko from './kenko-png.png';
+import kenko from '../images/kenko-png.png';
 
 function SignIn(){
 
@@ -54,11 +54,6 @@ function SignIn(){
                                     <button className="signin-button">Sign In</button>
                                 </form>
                             </div>
-                                {/*  ) : (
-                                     <div className="form-box">
-                                         <SignInPhone />
-                                     </div>
-                                 )}   */}
                         </div>
                     </div>
                 </div>

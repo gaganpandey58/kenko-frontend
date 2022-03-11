@@ -36,10 +36,10 @@ function FirstPage() {
                                     <label>Gender</label>
                                 </div>
                                 <div className='gender-in'>
-                                    <input type="radio" name="gender" id="male" />
+                                    <input type="radio" name="gender" id="male" value={Male} />
                                     <label for="male" className='gender'>Male</label>
                                     <input type="radio" name="gender" id="female" />
-                                    <label for="female" className='gender'>Female</label>
+                                    <label for="female" className='gender' value={Female}>Female</label>
                                 </div>
                             </div>
                         </div>  
