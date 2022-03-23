@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Input from '../../AccountLogin/Input';
+import DropDown from './DropDown';
 
 import './SecondPage.css';
 import ShowSymp from './ShowSymp';
@@ -25,9 +26,8 @@ function SecondPage(){
                     <div className='enter-heading'>
                         <h1 className='enter-h1'>What are your Symptoms?</h1>
                     </div>
-                    <div className='enter-form'>
+                    {/* <div className='enter-form'>
                         <form className='form-enter' onSubmit={handleSubmit}>
-                            {/* <input type="text" placeholder="e.g. headache, fever" /> */}
                             <Input
                                className="form-in"
                                type="text"
@@ -36,8 +36,14 @@ function SecondPage(){
                                onChange={handleChange}
                                value={symptom}
                             />
-                            <button type="submit" className='add-button'>Add</button>
+                            <button type="submit" className='add'>Add</button>
                         </form>
+                    </div> */}
+                    <div className='enter-form'>
+                        <div className='form-enter'>
+                            <DropDown />
+                            <button className='add'>ADD</button>
+                        </div>
                     </div>
                 </div>
                 <div className='showsymp'>

@@ -1,8 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import './FirstPage.css';
 
 function FirstPage() {
+
+    const [age, setAge] = useState('');
+
+    const changeHandler = e => {
+        setAge(e.target.value);
+    }
+
     return(
         <div className='sym-container'>
             <div className='sym-box'>
@@ -28,7 +35,12 @@ function FirstPage() {
                                     <label>Age</label>
                                 </div>
                                 <div>
-                                    <input type="number" className='age-in' />
+                                    <input 
+                                        type="number" 
+                                        className='age-in' 
+                                        value={age} 
+                                        onChange={changeHandler} 
+                                    />
                                 </div>
                             </div>
                             <div className='gender-div'>
