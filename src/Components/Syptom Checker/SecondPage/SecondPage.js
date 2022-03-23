@@ -4,17 +4,21 @@ import DropDown from './DropDown';
 
 import './SecondPage.css';
 import ShowSymp from './ShowSymp';
+import symptoms from '/home/gagan/Documents/7th sem/Project/Project/src/Components/Data/symptoms.json'
 
 function SecondPage(){
+    const[value, setValue] = useState(null);
     const [symptom, setSymptom] = useState('');
     const [data, setData] = useState([]);
 
-    const handleChange = e => {
-        setSymptom(e.target.value);
-    };
+    // const handleChange = e => {
+    //     const inputs = e.target.value;
+    //     console.log(inputs)
+    // };
 
     const handleSubmit = e => {
         e.preventDefault();
+        console.log("CLicked")
         setData([...data, {item: symptom, key: Date.now()}]);
         console.log("task=", data);
         setSymptom('');
@@ -41,8 +45,16 @@ function SecondPage(){
                     </div> */}
                     <div className='enter-form'>
                         <div className='form-enter'>
-                            <DropDown />
-                            <button className='add'>ADD</button>
+                            <DropDown 
+                                symptoms={symptoms} 
+                                prompt="Select your symptoms..." 
+                                value={value}
+                                id="id"
+                                label="name"
+                                onChange={val => setValue(val)}
+                                // onChange={handleChange}
+                            />
+                            <button className='add' onClick={handleSubmit}>ADD</button>
                         </div>
                     </div>
                 </div>

@@ -125,7 +125,7 @@ button.add-button {
   left: 67%;
 }
 
-.add-button:hover {
+.add-button.add:hover {
   background-color: white;
   color: #042a4b;
   border: 0.5px solid #042a4b;
