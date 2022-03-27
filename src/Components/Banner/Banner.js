@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Button from '../Button/Button';
 
 import './Banner.css'
@@ -15,7 +16,9 @@ function Banner() {
             </div>
 
             <div className='btn-box'>
-                <Button onClick={() => {alert("Site Under Construction!")}}>Check Now</Button>
+                <Link to="/firstPage">
+                    <Button>Check Now</Button>
+                </Link> 
             </div>
 
             <div className='banner-image'>

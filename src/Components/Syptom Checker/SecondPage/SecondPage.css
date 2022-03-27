@@ -55,6 +55,7 @@ h1.enter-h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .form-group {
@@ -67,6 +68,7 @@ h1.enter-h1 {
   padding: 15px;
   border: 2px solid black;
   outline: none;
+  transition: all 200ms ease;
 }
 
 .list {
@@ -125,7 +127,13 @@ button.add-button {
   left: 67%;
 }
 
-.add-button.add:hover {
+.add:hover {
+  background-color: white;
+  color: #042a4b;
+  border: 0.5px solid #042a4b;
+}
+
+.add-button:hover {
   background-color: white;
   color: #042a4b;
   border: 0.5px solid #042a4b;
@@ -134,4 +142,48 @@ button.add-button {
 .showsymp {
   width: 50%;
   /* border: solid 2px black; */
+}
+
+.dropdown-box .options {
+  width: 23rem;
+  height: 10rem;
+  position: relative;
+  top: 0px;
+  right: 2.7rem;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  overflow-y: auto;
+  z-index: 1000;
+  border-radius: 10px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.dropdown-box .options.open {
+  display: block;
+}
+
+.dropdown-box .option {
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: block;
+  padding: 6px 10px;
+}
+
+.dropdown-box .option:hover {
+  background-color: #f2f9fc;
+  color: #333;
+}
+
+.list-name {
+  color: black;
+  font-family: Roboto;
+  font-size: larger;
+}
+
+.dropdown-box .options::-webkit-scrollbar {
+  display: none;
 }

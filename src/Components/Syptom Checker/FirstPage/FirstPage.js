@@ -1,13 +1,30 @@
 import React, {useState} from 'react';
+import { useNavigate } from 'react-router';
+import SecondPage from '../SecondPage/SecondPage';
 
 import './FirstPage.css';
 
 function FirstPage() {
 
     const [age, setAge] = useState('');
+    const [gender, setGender] = useState('');
+    const navigate = useNavigate();
 
     const changeHandler = e => {
         setAge(e.target.value);
+    }
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        console.log(age);
+        console.log(gender);
+        setAge('');
+        navigate('/secondPage', {state: {Age: age, Gender: gender}})
+
+    }
+
+    const selectHandle = e => {
+        setGender(e.target.value);
     }
 
     return(
@@ -28,7 +45,7 @@ function FirstPage() {
                     </div>
                 </div>
                 <div className='d-form'>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <div className='in-container'>
                             <div className='age-div'>
                                 <div className='age-lbl'>
@@ -48,9 +65,9 @@ function FirstPage() {
                                     <label>Gender</label>
                                 </div>
                                 <div className='gender-in'>
-                                    <input type="radio" name="gender" id="male"  />
+                                    <input type="radio" name="gender" id="male" value="male" onChange={selectHandle}/>
                                     <label for="male" className='gender'>Male</label>
-                                    <input type="radio" name="gender" id="female" />
+                                    <input type="radio" name="gender" id="female" value="female" onChange={selectHandle}/>
                                     <label for="female" className='gender' >Female</label>
                                 </div>
                             </div>

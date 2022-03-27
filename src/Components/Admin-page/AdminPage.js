@@ -1,12 +1,11 @@
 import React from 'react';
 
-import './Header.css';
-import AccountLogin from '../AccountLogin/AccountLogin';
-import Banner from '../Banner/Banner';
-function Header() {
-    return ( 
-        <div>
-            <div className="bar">
+import './AdminPage.css';
+
+function AdminPage() {
+    return(
+           <div>
+            <div className="admin-bar">
                 <div className="logo">
                     <text className="logo-text">kenko</text>
                 </div>
@@ -14,8 +13,8 @@ function Header() {
                 
                 <div className='AccountLogin'><AccountLogin/></div>
             </div>
-        </div>
-     );
+           </div>
+    )
 }
 
-export default Header;
+export default AdminPage;
