@@ -23,7 +23,7 @@
 
 .card-areas {
   display: flex;
-  margin-top: 8%;
+  margin-top: 4%;
   justify-content: center;
   column-gap: 1%;
   flex-direction: row;
@@ -31,7 +31,7 @@
 
 .card {
   width: 30%;
-  height: 400px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
