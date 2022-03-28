@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { useNavigate } from 'react-router';
+import { useLocation, useNavigate } from 'react-router';
 import SecondPage from '../SecondPage/SecondPage';
 
 import './FirstPage.css';
@@ -9,6 +9,7 @@ function FirstPage() {
     const [age, setAge] = useState('');
     const [gender, setGender] = useState('');
     const navigate = useNavigate();
+    const location = useLocation();
 
     const changeHandler = e => {
         setAge(e.target.value);
@@ -19,7 +20,7 @@ function FirstPage() {
         console.log(age);
         console.log(gender);
         setAge('');
-        navigate('/secondPage', {state: {Age: age, Gender: gender}})
+        navigate('/secondPage', {state: {Age: age, Gender: gender, Name: location.state.name}})
 
     }
 

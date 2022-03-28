@@ -1,10 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Button from '../Button/Button';
 
 import './Banner.css'
 
 function Banner() {
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    function handleClick() {
+        navigate('/firstPage', {state: {name: location.state.name}});
+    }
     return (
         <div className='container'>
             <div className='banner-text'>
@@ -16,9 +22,7 @@ function Banner() {
             </div>
 
             <div className='btn-box'>
-                <Link to="/firstPage">
-                    <Button>Check Now</Button>
-                </Link> 
+                    <Button onClick={handleClick}>Check Now</Button>
             </div>
 
             <div className='banner-image'>

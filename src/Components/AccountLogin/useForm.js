@@ -28,11 +28,20 @@ const useForm = validate => {
             username: values.username,
             password: values.password
         }
-        if (data.username === "shakyanischal686@gmail.com" && data.password === "123456") {
+        if (
+            (data.username === "shakyanischal686@gmail.com" && data.password === "123456")) {
             // const token = "testToken";
             // const test = token;
             // localStorage.setItem('token', test);
             // setViewSignInPhone(true);
+            console.log("Done");
+            history('/home', {state: {name: data.username}});
+        }
+        else if(data.username === "gaganpandey@gmail.com" && data.password === "123456") {
+            console.log("Done");
+            history('/home', {state: {name: data.username}});
+        }
+        else if(data.username === "riteemaharjan@gmail.com" && data.password === "123456") {
             console.log("Done");
             history('/home', {state: {name: data.username}});
         }

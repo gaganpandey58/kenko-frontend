@@ -12,24 +12,24 @@ function PatientReport() {
         <h1 className="pr">Patient Report</h1>
         <div className="pdfreport">
           <div> 
-              Patients's Name: {location.state.name}
+              Patients's Name: <b>{location.state.Name}</b>
           </div>
 
           <div>
-              Age: {location.state.Age}
+              Age: <b>{location.state.Age}</b>
           </div>
 
           <div>
-            Gender: {location.state.Gender}
+            Gender: <b>{location.state.Gender}</b>
           </div>
 
           <div> 
-            Symptoms: {location.state.Symptom1}, {location.state.Symptom2}, {location.state.Symptom3}, 
-                      {location.state.Symptom4}, {location.state.Symptom5}
+            Symptoms: <b>{location.state.Symptom1}, {location.state.Symptom2}, {location.state.Symptom3}, 
+                      {location.state.Symptom4}, {location.state.Symptom5}</b>
           </div>
 
           <div> 
-            Predicted Disease: {location.state.Result}
+            Predicted Disease: <b>{location.state.Result}</b>
           </div>
         
         </div>

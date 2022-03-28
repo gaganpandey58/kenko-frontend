@@ -84,6 +84,7 @@ function SecondPage({ bdata }){
             {state: {
                 Age: location.state.Age,
                 Gender: location.state.Gender,
+                Name: location.state.Name,
                 Symptom1: symptom1,
                 Symptom2: symptom2,
                 Symptom3: symptom3,

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {useNavigate} from 'react-router-dom';
 
 import './SignUp.css';
 import Input from '../AccountLogin/Input';
@@ -9,6 +10,7 @@ import kenko from '../images/kenko-png.png';
 function SignUp(){
 
     // const {handleChange, handleSubmit, values, errors} = useForm(validate);
+    const navigate = useNavigate();
     const [errors, setErrors] = useState({});
     const [values, setValues] = useState({
         firstName: '',
@@ -30,6 +32,7 @@ function SignUp(){
         e.preventDefault();
         setErrors(validate(values));
         console.log("submit", values);
+        navigate('/')
     }
 
     function validate(values) {
